@@ -9,3 +9,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+// the app component is rendered here
