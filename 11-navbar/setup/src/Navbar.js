@@ -10,7 +10,7 @@ const Navbar = () => {
   const linksRef = useRef(null)
 
   useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;//useRef can be used to target a paricular DOM element. UseRef returns an object with the key 'current' that holds the DOM element as its value.
+    const linksHeight = linksRef.current.getBoundingClientRect().height;//useRef can be used to target a particular DOM element. UseRef returns an object with the key 'current' that holds the DOM element as its value.
     console.log(linksRef.current);
     if(showLinks){
       linksContainerRef.current.style.height = `${linksHeight}px`
@@ -19,6 +19,7 @@ const Navbar = () => {
            linksContainerRef.current.style.height = '0px';
       }
     },[showLinks])
+    
   return <nav>
        <div className='nav-center'>
          <div className='nav-header'>

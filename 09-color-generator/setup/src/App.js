@@ -12,7 +12,7 @@ function App() {
      e.preventDefault();
      try {
      let colors = new Values(color).all(10);
-     setList(colors); // the list is update here.
+     setList(colors); // the list is updated here.
      } 
      //values.js throws an error on the screen if the input isnt a color. Therefore, catch is used to prevent that. It displays it simply as a console.log.(Gon' read more on it sha)
      catch (error) {

@@ -7,7 +7,7 @@ function App() {
    
    const handleSubmit = (e) => {
        e.preventDefault();
-       let amount = parseInt(count); // by default forms return strings hence why we parsed it to int 
+       let amount = parseInt(count); // by default, forms return strings hence why we parsed it to int 
        if(count <=0) {
          amount = 1;
        }
